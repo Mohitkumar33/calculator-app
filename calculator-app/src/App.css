@@ -1,0 +1,28 @@
+.outer-box {
+  height: 20rem;
+  width: 15rem;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.calculation-space {
+  height: 10rem;
+  width: 100%;
+  background-color: blueviolet;
+}
+
+.all-keys {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+.key-row {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
+
+.key-row > * {
+  flex-grow: 1;
+}
