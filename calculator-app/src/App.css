@@ -1,28 +1,59 @@
-.outer-box {
-  height: 20rem;
+.App {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.calculator-box {
+  height: 21.5rem;
   width: 15rem;
-  background-color: aqua;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.calculation-space {
-  height: 10rem;
-  width: 100%;
-  background-color: blueviolet;
+  background-color: black;
 }
 
-.all-keys {
-  display: flex;
-  flex-direction: column;
-  background-color: blue;
-}
-.key-row {
-  display: flex;
-  flex-direction: row;
+.single-item {
+  color: white;
+  width: 3.75rem;
   height: 2.5rem;
+  text-align: center;
+}
+.single-item:hover {
+  cursor: pointer;
+}
+.output-box {
+  height: 10rem;
+  widows: 100%;
+  border-bottom: 1px solid white;
+  color: white;
+  position: relative;
+}
+.result-display {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 }
 
-.key-row > * {
+.number-display-operations {
+  display: flex;
+  margin-top: 10px;
+}
+
+.clear-screen {
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  width: 5rem;
+  text-align: center;
+}
+.clear-screen:hover {
+  cursor: pointer;
+}
+
+.number-display {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.operations {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
